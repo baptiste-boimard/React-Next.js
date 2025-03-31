@@ -1,7 +1,7 @@
 'use client'
 
 import Lottie from 'lottie-react'
-import animation404 from '../../public/Animations/animation.json'
+import animation404 from './lotties/animation.json'
 
 export default function NotFound() {
   return (
