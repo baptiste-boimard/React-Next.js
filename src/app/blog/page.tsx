@@ -10,7 +10,7 @@ export default async function BlogPage() {
     <div className="p-6">
       <h1 className="text-2xl font-bold mb-4">Blog</h1>
       <ul className="space-y-2">
-        {allArticles.map((article: any) => (
+      {allArticles.map((article: any) => (
           <li key={article.id}>
             <Link href={`/blog/${article.id}`} className="text-blue-600 underline">
               {article.title}

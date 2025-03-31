@@ -1,4 +1,4 @@
-import Lottie404 from '../components/Lottie404'
+import Lottie404 from '@/components/Lottie404'
 
 export default function NotFound() {
   return (

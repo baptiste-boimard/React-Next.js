@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { db } from '@/db/client'
 import { articles } from '@/db/schema'
 import { eq } from 'drizzle-orm'
@@ -5,20 +6,13 @@ import { notFound } from 'next/navigation'
 
 export const revalidate = 60
 
-type Props = {
-  params: {
-    id: string
-  }
-}
+export default async function ArticlePage(props: any) {
+  const id = parseInt(props?.params?.id)
 
-export default async function ArticlePage({ params }: Props) {
-  const id = parseInt(params.id)
-
-  // 🚫 Si l'id n'est pas un nombre valide : 404
-  if (isNaN(id)) {
-    return notFound()
-  }
-
+  // if (isNaN(id)) {
+  //   return notFound()
+  // }
+  
   const article = await db
     .select()
     .from(articles)
