@@ -5,7 +5,7 @@ export default function HomePage() {
     <div>
       <h1 className="text-2xl mb-4">Bienvenue sur la page d&apos;accueil !</h1>
       <Image
-        src="/Images/image.jpg"
+        src="/images/image.jpg"
         alt="Une belle image"
         width={400}
         height={400}
