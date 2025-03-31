@@ -8,7 +8,7 @@ export default function HomePage() {
         src="/Images/image.jpg"
         alt="Une belle image"
         width={400}
-        height={300}
+        height={400}
         className="rounded shadow-lg"
         priority
       />
