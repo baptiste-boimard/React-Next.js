@@ -3,8 +3,6 @@ import { db } from '@/db/client'
 import { articles } from '@/db/schema'
 import Link from 'next/link'
 
-export const dynamic = 'force-dynamic' // 👈 empêche le pre-render au build
-
 export default async function BlogPage() {
   const allArticles = await db.select().from(articles)
 
